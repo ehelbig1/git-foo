@@ -10,9 +10,9 @@ There are many ways to learn more about Git and specific tools:
 
 1. From the command-line
 	* $ git help \<verb\>
-	* $ git <verb> --help
-	* $ git <verb> -h (will output a list of command options)  
-	* $ man git-<ver>
+	* $ git \<verb\> --help
+	* $ git \<verb\> -h (will output a list of command options)  
+	* $ man git-\<ver\>
 
 2. Websites
 	* [man-pages](https://git-scm.com)
@@ -22,4 +22,9 @@ There are many ways to learn more about Git and specific tools:
 
 ## Git Architecture
 
-It's important to understand the basic underlying architecture Git uses. 
+It's important to understand the basic underlying architecture Git uses. Most Git tools make use of this architecture
+and understanding it will allow you to better understand these tools. 
+
+There are three main areas that files move through during the Git flow.
+
+![Git Architecture](./images/architecture.png)
