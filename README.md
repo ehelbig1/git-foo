@@ -9,7 +9,7 @@ Like any great software, Git has excellent documentation!
 There are many ways to learn more about Git and specific tools:
 
 1. From the command-line
-	* $ git help <verb>
+	* $ git help \<verb\>
 	* $ git <verb> --help
 	* $ git <verb> -h (will output a list of command options)  
 	* $ man git-<ver>
