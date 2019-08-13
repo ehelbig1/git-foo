@@ -80,6 +80,29 @@ Explore more available options [here](https://git-scm.com/docs/git-diff).
 
 ## Git Bisect
 
+`git bisect` - Use binary search to find the commit that introduced a bug.
+
+* `git bisect start` - starts the bisect
+* `git bisect bad <commit>` - tell bisect a commit known to contain the bug. Ignoring the commit will default to current commit.
+* `git bisect good <commit>` - tell bisect a commit that doesn't contain the bug. \<commit\> can be a commit hash or a tag.
+
+Once the above information is given to `git bisect` it will use a binary search to find the commit that introduced a bug by process of elimination.
+
+It will checkout the commit half way between the `good` and `bad` commits that you initially provided it. You then need to tell `git bisect` if that commit
+contains the bug or not.
+
+* `git bisect good` - commit doesn't contain the bug.
+* `git bisect bad` - commit does contain the bug.
+
+If you marked the commit as good, then `git bisect` knows the bug was introduced at some point between the current commit and the initial `bad` commit you provided.
+If you marked it as bad, then `git bisect` knows the bug was introduced between the initial `good` commit and the current commit.
+
+`git bisect` will then checkout the the commit half way between the two new commits, bases on the result from above.
+
+This process repeats until `git bisect` narrows down the commit that first introduced the bug.
+
+When finished with `git bisect` run `git bisect reset`. This will end the `git bisect` process and checkout the commit you were on prior to starting the process.
+
 ## Git Flow
 
 ## Apendix
