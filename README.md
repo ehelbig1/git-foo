@@ -103,6 +103,8 @@ This process repeats until `git bisect` narrows down the commit that first intro
 
 When finished with `git bisect` run `git bisect reset`. This will end the `git bisect` process and checkout the commit you were on prior to starting the process.
 
+`git bisect run my_script arguments` - a script can be used to test whether a commit is `good` or `bad`!
+
 ## Git Flow
 
 ## Apendix
