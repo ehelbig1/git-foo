@@ -113,3 +113,7 @@ When finished with `git bisect` run `git bisect reset`. This will end the `git b
 `git mv` - Can be uses to _rename_ or _move_ a file, explicitly teilling get that you did so.
 `git rm` - Removes a file from both the _Working Directory_ and _Index_. The file is no longer tracked and will not be in the next commit.
 `git rm --cahced` - Removes a file from the _Index_ only. Leaves the file in you _Working Directory_.
+
+# Authors
+* Adam Hockensmith
+* Evan Helbig
